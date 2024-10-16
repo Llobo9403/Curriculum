@@ -1,0 +1,28 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+
+}
+
+nav {
+    display: inline;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+    background-color: black;
+}
+
+#menu li{
+    display: inline;
+
+}
+
+#menum li a {
+    color: white;
+    display: inline-block;
+    padding: 10px;
+
+}
