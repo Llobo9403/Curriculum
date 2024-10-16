@@ -1,28 +1,93 @@
+/* Include section */
+
+
+/* OSwald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/*  */
+
+
+
+/* Code */
 * {
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
     box-sizing: border-box;
 
 }
 
 nav {
     display: inline;
+
 }
+
+
 
 #menu {
     list-style-type: none;
     padding: 0;
     background-color: black;
+    color: white;
+    display: flex;
+    font-family: "Oswald";
 }
+
+
 
 #menu li{
     display: inline;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#menu li:hover {
+    background-color: darkgrey;
+}
+
+#menu-logo {
+    width: 45%;
+}
+
+#menu li a {
+    display: inline-block;
 
 }
 
-#menum li a {
-    color: white;
-    display: inline-block;
-    padding: 10px;
+#container {
+    text-align: center;
+    padding: 15em 0px 0px 0px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
+}
 
+#lang-text {
+    padding-bottom: 6em;
+}
+
+#button-canva{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.lang-choice {
+    width: 30%;
+    height: 4em;
+    margin: 2em;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: black; 
 }
