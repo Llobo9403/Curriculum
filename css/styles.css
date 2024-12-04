@@ -12,6 +12,9 @@
 
 
 /* Code */
+
+/* Background */
+
 * {
     
     margin: 0 auto;
@@ -21,40 +24,75 @@
 }
 
 body{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
 
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: -1;
+    animation-duration: 5000ms;
+    
+}
+
+@keyframes back {
+    0% {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            15deg,
+            #444,
+            #000
+            );
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        background-color: linear-gradient(
+            15deg,
+            #000,
+            #444
+        );
+    }
 }
 
 footer {
     background-color: #000;
-    
+    background: linear-gradient()
 }
 
-#background {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-
-}
-
+/* NavBar */
 
 nav {
     display: inline;
     max-height: 3em; 
     position: fixed;
-    text-align: right;
+    text-align: center;
+    background-color: #000;
+    width: 100%;
+    padding: auto;
 }
 
-nav ul li:first-child {
-    left: 2em;
+/* Body of the Page */
+
+main {
+    width: 100%;
+    height: 100%;
 }
 
 #menu {
-    list-style-type: none;
+
     padding: 0;
-    color: white;
+    color: #eee;
     display: flex;
     font-family: "Courier Prime";
     font-size: x-large;
+    list-style-type: none;
 }
 
 #menu li{
@@ -67,7 +105,7 @@ nav ul li:first-child {
 
 #menu .menu-item:hover {
     cursor: pointer;
-    text-shadow: 0 0 3px white; 
+    text-shadow: 0 0 3px #fff; 
 }
 
 #menu-logo {
@@ -97,25 +135,26 @@ nav ul li:first-child {
 
 #button-canva{
     padding: 0;
-    margin: 0;
     width: 100%;
     height: auto;
     text-align: center;
+    margin-bottom: 3em;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #eee;
 }
 
 #lang-text, h2{
-    color: #fff;
+    color: #eee;
 }
 
 .lang-choice {
     width: 30%;
     height: 4em;
     margin: 0;
+    border: 0;
     border-radius: 16px;
     background-color: #000; 
     color: #eee;
@@ -124,7 +163,11 @@ a {
 .lang-choice:hover {
     background-color: #555;
     cursor: pointer;
-    color: #000;
+    font-weight: 700;
+}
+
+.lang-choice:hover a {
+    color: #111;
 }
 
 .logo-font {
