@@ -37,7 +37,7 @@ body{
     box-sizing: border-box;
     z-index: -1;
     animation-duration: 5000ms;
-    
+
 }
 
 @keyframes back {
@@ -174,4 +174,18 @@ a {
     font-family: 'Courier Prime';
     font-weight: 700;
     font-size:x-large;
+}
+
+/* footer elements */
+
+.footer-contacts {
+    
+}
+
+.info-title {
+    font-family: 'Oswald';
+    font-size: medium;
+    font-weight: 600;
+    color: #eee;
+
 }
