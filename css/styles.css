@@ -105,7 +105,8 @@ main {
 
 #menu .menu-item:hover {
     cursor: pointer;
-    text-shadow: 0 0 3px #fff; 
+    text-shadow: 0 0 3px #fff;
+    transition-delay: 500ms;
 }
 
 #menu-logo {
@@ -178,8 +179,10 @@ a {
 
 /* footer elements */
 
-.footer-contacts {
-    
+footer {
+    margin: 0;
+    display: flex;
+    padding: 0;
 }
 
 .info-title {
